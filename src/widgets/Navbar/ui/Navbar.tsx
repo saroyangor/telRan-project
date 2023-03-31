@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { ThemeSwitcher } from "@/features/ThemeSwitcher";
 import { classNames } from "@/shared/lib/classNames";
 import { AppLink } from "@/shared/ui/AppLink";
 
@@ -15,8 +14,6 @@ export const Navbar = (props: NavbarProps) => {
 
   return (
     <div className={classNames(cls.navbar, [className])}>
-      <ThemeSwitcher />
-
       <div className={cls.links}>
         <AppLink to='/'>Главная</AppLink>
         <AppLink to='/about'>О нас</AppLink>
