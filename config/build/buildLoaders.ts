@@ -9,7 +9,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     use: ['@svgr/webpack'],
   };
 
-  const bableLoader = {
+  const babelLoader = {
     test: /\.(js|ts|jsx|tsx)$/,
     exclude: /node_modules/,
     use: {
@@ -57,7 +57,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
   return [
     fileLoader,
     svgLoader,
-    bableLoader,
+    babelLoader,
     typescriptLoader,
     cssLoader,
   ];

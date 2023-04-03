@@ -46,7 +46,9 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     '@typescript-eslint/no-explicit-any': 1,
-    '@typescript-eslint/no-unused-vars': 1,
+    '@typescript-eslint/no-unused-vars': [1, {
+      argsIgnorePattern: '^_',
+    }],
     'no-use-before-define': 0,
     'no-param-reassign': 0,
     'operator-linebreak': 0,
