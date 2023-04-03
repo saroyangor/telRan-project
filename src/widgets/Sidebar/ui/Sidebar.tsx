@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import { ThemeSwitcher } from "@/features/ThemeSwitcher";
 import { classNames } from '@/shared/lib/classNames';
+import { LangSwitcher } from "@/features/LangSwitcher";
 
 import cls from './Sidebar.module.scss';
-import {LangSwitcher} from "@/features/LangSwitcher/LangSwitcher";
 
 interface SidebarProps {
   className?: string
