@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 import { classNames } from '@/shared/lib/classNames';
 
@@ -24,6 +24,7 @@ export const Button = (props: ButtonProps) => {
 
   return (
     <button
+      type="button"
       className={classNames(cls.Button, [className, cls[theme]])}
       {...otherProps}
     >
